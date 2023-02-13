@@ -1,0 +1,9 @@
+ip = str(input())
+arr = ['a', 'e', 'i', 'o', 'u']
+
+while True:
+    if ip in arr:
+        print(ip, end=" ")
+        break
+    print(ip, end=" ")
+    ip = chr(ord(ip)+1)
