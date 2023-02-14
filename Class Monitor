@@ -1,0 +1,14 @@
+N = int(input())
+M = int(input())
+t = str(input())
+l = input().split()
+count = 0
+
+for i in l:
+    if i <= t:
+        count += 1
+
+if count<M:
+    print("Seminar got cancelled")
+else:
+    print("Seminar will continue as per schedule")
