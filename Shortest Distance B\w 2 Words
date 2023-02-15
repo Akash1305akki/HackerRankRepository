@@ -1,0 +1,18 @@
+s = str(input())
+w1 = str(input())
+w2 = str(input())
+l = s.split(" ")
+n = len(l)
+count = 0
+res=100
+
+for i in range(0,n):
+    if l[i] == w1:
+        for j in range(i+1,n):
+            count += 1
+            if l[j] == w1:
+                count = 0
+            if l[j] == w2:
+                if count < res:
+                    res = count
+print("the shortest distance between {} and {} is {}".format(w1,w2,res))
