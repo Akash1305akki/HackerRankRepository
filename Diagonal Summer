@@ -1,0 +1,13 @@
+n = int(input())
+temp = 0
+l = [[0 for j in range(n)] for i in range(n)]
+
+for i in range(n):
+    for j in range(n):
+        l[i][j] = int(input("Enter a value for index ({},{}) of the array: ".format(i, j)))
+
+for i in range(0,n):
+    for j in range(0,n):
+        if i==j or (i+j==n-1):
+            temp += l[i][j]
+print(temp)
