@@ -1,0 +1,16 @@
+numb = int(input())
+k = str(numb)
+arr = [int(x) for x in k]
+var1 = var2 = 1
+temp = 0
+
+for i in range(len(arr)):
+    var1 = arr[i]
+    var2 = i+1
+    var1 = var1**var2
+    temp = temp + var1
+
+if numb == temp:
+    print("True, The Given Number is Disarium")
+else:
+    print("False, The Given Number is not a Disarium")
