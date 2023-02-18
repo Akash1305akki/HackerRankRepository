@@ -1,0 +1,16 @@
+def max_length_word(ip):
+    words = ip.split()
+
+    max_length = 0
+    max_length_word = ""
+
+    for word in words:
+        if len(word) > max_length:
+            max_length = len(word)
+            max_length_word = word
+
+    return max_length_word
+
+ip = str(input())
+max_word=max_length_word(ip)
+print(max_word)
