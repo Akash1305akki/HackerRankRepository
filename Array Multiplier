@@ -1,0 +1,17 @@
+arr = input().split(',')
+int_arr = [int(x) for x in arr]
+ans = []
+temp = 1
+
+for n in int_arr:
+    ans.append(n)
+
+for i in range(len(int_arr)):
+    k = i
+    for j in range(len(int_arr)):
+        if i != j:
+            temp = temp*int_arr[j]
+    ans[k] = temp
+    temp = 1
+
+print(ans)
